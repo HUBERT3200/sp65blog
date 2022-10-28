@@ -14,16 +14,19 @@ form.addEventListener('submit', (e) => {
         messages.push('Nadaj krutszy tytuł')
     }
     
-    
-    
-    
     if (messages.length > 0) {
+        errorDiv.style.display = ''
         e.preventDefault()
         errorDiv.innerText = messages.join(', ')
     }
     e.preventDefault()
     setTimeout(function(){
         console.log("Wyczyszczono errorDiv")
-        errorDiv.innerText = ' '
+        errorDiv.innerText = ''
+        errorDiv.style.display = 'none'
     }, 3000);
 })
+
+addEventListener('load', (event) => {
+    errorDiv.style.display = 'none'
+});
