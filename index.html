@@ -1,6 +1,26 @@
 <DOCTYPE html>
 <html>
+    <head>
+        <title>School Blog Sp 65</title>
+        <script defer src="index.js"></script>
+    </head>
     <body>
-        
+        <div id="error"></div>
+        <form id="form" action="/" method="get">
+        <div>
+          <label for="tytul">Tytół</label>
+          <input type="text" id="tytul" name="tresc"><br><br>
+        </div>
+        <div>
+          <label for="tresc">Treść</label>
+          <input type="text" id="tresc"><br><br>
+        </div>
+        <div>
+          <select name="wybierz" id="wybierz">
+              <option value="opcja1">Anonimo</option>
+          </select><br>
+        </div>
+          <input type="submit"><br><br>
+        </form>
     </body>
 </html>
