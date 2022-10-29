@@ -9,8 +9,10 @@ start()
 
 function createList(breedList) {
   document.getElementById("content").innerHTML = `
+    <ul>
         ${Object.keys(breedList).map(function (breed) {
-          return `<p1>${breed}</p1>`
+          return `<li>${breed}</p1><li>`
         }).join('')}
+    </ul>
   `
 }
