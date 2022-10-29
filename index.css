@@ -15,7 +15,7 @@ label {
     float: left;
     border: solid 5px yellow;
     text-align: left;
-    height: 80%;
+    height: 88%;
 }
 
 .right {
@@ -24,9 +24,11 @@ label {
     display: block;
     float: right;
     width: 70%;
-    height: 80%;
+    height: 88%;
     border: solid 5px yellow;
     margin-bottom: 10px;
+    word-wrap: break-word;
+    overflow-y: scroll;
 }
 
 .down {
@@ -35,7 +37,7 @@ label {
     border: solid 5px yellow;
     display: block;
     margin-top: -10%;
-    height: 10%;
+    height: 2%;
     clear: both;
 }
 
