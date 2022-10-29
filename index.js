@@ -7,10 +7,13 @@ async function start() {
 
 start()
 
-function createList(breedList) {
+function createBreedList(breedList) {
   document.getElementById("content").innerHTML = `
+  <select onchange="loadByBreed(this.value)">
+        <option>Choose a dog breed</option>
         ${Object.keys(breedList).map(function (breed) {
-          return `<p1>${breed}</p1>`
+          return `<option>${breed}</option>`
         }).join('')}
+      </select>
   `
 }
