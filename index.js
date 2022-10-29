@@ -34,6 +34,6 @@ document.addEventListener('submit', (e)=>{
     }
     e.preventDefault();
     fetch("./data.json").response.json().push(formularz)
-    alert("Dodano treść");
+    alert("Dodano treść" + '\n' + tytul.value + '\n' + tresc.value);
     
 })
