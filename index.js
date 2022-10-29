@@ -24,8 +24,16 @@ function createList(breedList) {
 const tytul = document.getElementById("tytul");
 const tresc = document.getElementById("tresc");
 
+//let movies = []
 
-function submitForm() {
-    alert("Dodano treść" + '\n' + tytul.value + '\n' + tresc.value);
+
+document.addEventListener('submit', (e)=>{
+    let formularz = {
+        id: Date.now(),
+        title: (tytul.value + '<br>' + tresc.value)
+    }
+    e.preventDefault();
+    fetch("./data.json").response.json().push(formularz)
+    alert("Dodano treść");
     
-}
+})

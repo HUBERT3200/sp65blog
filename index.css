@@ -19,7 +19,7 @@ label {
 }
 
 .right {
-    text-align: center;
+    text-align: left;
     padding: 10px;
     display: block;
     float: right;
