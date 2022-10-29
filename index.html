@@ -1,16 +1,16 @@
 <DOCTYPE html>
 <html>
     <head>
-        <title>School Blog Sp 65</title>
+        <title>Spotted sp65</title>
         <link href="index.css" type="text/css" rel="stylesheet" >
         <link rel="stylesheet" href="BebasNeue-Regular.ttf">
     </head>
     <body>
     <div class="container">
         <div class="left">
-        <form class="form" id="form" action="/" method="get">
+        <form class="form" id="form" onsubmit="submitForm()" method="get">
         <div> 
-          <label for="tytul">Tytół</label>
+          <label for="tytul">Tytuł</label>
           <input type="text" id="tytul" maxlength="20" name="tresc"><br><br>
         </div> 
         <div> 
@@ -18,13 +18,6 @@
             <textarea type="comments" cols="30" maxlength="500" rows="3" id="tresc"></textarea><br><br>
         </div>
             <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdXpcEiAAAAAPVGwRpo0uFiIEjVQV2GnJFWIz2n"></script>
-            <script>
-            grecaptcha.enterprise.ready(function() {
-                grecaptcha.enterprise.execute('6LdXpcEiAAAAAPVGwRpo0uFiIEjVQV2GnJFWIz2n', {action: 'login'}).then(function(token) {
-                   ...
-                });
-            });
-            </script>
         <div>
           <input type="submit" class="przycisk"><br><br>
         </div>

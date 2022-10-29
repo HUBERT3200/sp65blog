@@ -16,3 +16,16 @@ function createList(breedList) {
     </ul>
   `
 }
+
+
+
+// część submit
+
+const tytul = document.getElementById("tytul");
+const tresc = document.getElementById("tresc");
+
+
+function submitForm() {
+    alert("Dodano treść" + '\n' + tytul.value + '\n' + tresc.value);
+    
+}
