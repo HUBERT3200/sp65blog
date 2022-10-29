@@ -17,6 +17,14 @@
           <label for="tresc">Treść</label>
             <textarea type="comments" cols="30" maxlength="500" rows="3" id="tresc"></textarea><br><br>
         </div>
+            <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdXpcEiAAAAAPVGwRpo0uFiIEjVQV2GnJFWIz2n"></script>
+            <script>
+            grecaptcha.enterprise.ready(function() {
+                grecaptcha.enterprise.execute('6LdXpcEiAAAAAPVGwRpo0uFiIEjVQV2GnJFWIz2n', {action: 'login'}).then(function(token) {
+                   ...
+                });
+            });
+            </script>
         <div>
           <input type="submit" class="przycisk"><br><br>
         </div>
