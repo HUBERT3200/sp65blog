@@ -1,5 +1,5 @@
 async function start() {
-    const responese = await fetch("https://www.schoolblog65.ml/data.json")
+    const responese = await fetch("./data.json")
     const data = await responese.json()
     console.log(data)
     createList(data.title)
